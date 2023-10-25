@@ -28,14 +28,14 @@ steps:
 
   - type: Command
     name: "Function Build Default Image"
-    timeoutInSeconds: 6000
+    timeoutInSeconds: 3600
     command: |
       cd ${OCI_PRIMARY_SOURCE_DIR}/fn-with-defaultImage
       fn build  --verbose
 
   - type: Command
     name: "Function Build Custom Image"
-    timeoutInSeconds: 6000
+    timeoutInSeconds: 3600
     command: |
       cd ${OCI_PRIMARY_SOURCE_DIR}/fn-with-customImage
       fn build  --verbose
